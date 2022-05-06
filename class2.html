@@ -29,106 +29,250 @@
 			<!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
 			<div class="slides"> 
 				
-				<!-- Opening Slide -->
-				<section>
-					<img src="assets/imgs/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="400px" class="noborder"/>
-					<br>
-					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
-				</section>
 				
-				<!-- GDI Mission Statement -->
-				<section>
-					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
-					<br>
-					<h3>We create welcoming, supportive and accessible environments for women and non-binary adults to learn software development.</h3>
-				</section>
-
-				<!-- GDI Code of Conduct -->
-				<section>
-					<h3>We are dedicated to providing a welcoming and comfortable environment for all to learn coding and every attendee is expected to uphold our <span style="font-weight: bolder;">Code of Conduct</span>:</h3>
-					<h4><a href="https://girldevelopit.com/code-of-conduct/" target="_blank">girldevelopit.com/codeofconduct/</a></h4>
-					<h4><a href="bit.ly/gdi-incident-report" target="_blank">bit.ly/gdi-incident-report</a></h4>
-				</section>
-
-				<!-- GDI Promo - Part 1-->
-				<section>
-					<h2 style="font-weight: bolder;">What Does<br>Girl Develop It<br>Teach?</h2>
-				</section>
-
-				<section id="fragments">
-					<h3>Web Development</h3>
-					<h3 class="fragment">Data Science</h3>
-					<h3 class="fragment">UX Design & Research</h3>
-					<h3 class="fragment">Workforce Classes</h3>
-					<h3 class="fragment">Career-Building Events & Conferences</h3>
-				</section>
-
-				<!-- GDI Promo - Part 2 -->
-				<section>
-					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
-					<br>
-					<h3>Find All Our Classes & Events:</h3>
-					<h3><a href="https://girldevelopit.com/" target="_blank">www.girldevelopit.com</a></h3>
-				</section>
-
-				<!-- HouseKeeping -->
-				<section>
-					<h2>Housekeeping</h2>
-					<ul>
-						<li>Display your preferred name and pronoun.</li>
-						<li>We are here for you!</li>
-						<li>Every question is important.</li>
-						<li>Participate, Experiment, Have Fun!</li>
-					</ul>
-				</section>
-
-				<!-- Course Title -->
-				<section>
-					<h2>Course Title</h2>
-				</section>
-
-				<!-- Instructor Intro -->
-				<section>
-					<h2>Instructor Intro</h2>
-					<p>Name, title, company, bio, etc.</p>
-				</section>
-
-				<!-- OPTIONAL: TAs Intro -->
-				<section>
-					<p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p>
-					<h2>TA Intro(s)</h2>
-					<p>Names, titles</p>
-				</section>
-
-				<!-- Student Intros / IceBreaker -->
-				<section>
-					<p style="font-size: 16px; font-style: italic;">(Instructor's choice.<br> This is a title slide. Use a new slide for the intros.<br>Comment out this note for class.)</p>
-					<h2>Student Intros or<br> Ice Breaker</h2>
-				</section>
-
-				<!-- Course Agenda/Topics/Course Outline -->
-				<section>
-					<h2>Course Outline or Topics</h2>
-				</section>
-			
-				<!-- Course Goals -->
-				<section>
-					<h2>Course Goals</h2>
-				</section>
 
 				<!-- Course Slides -->
 				<!-- Create as many new sections as needed -->
 
 				<!-- Slide Name -->
 				<section>
-					<h2>Course Content...</h2>
-				</section>
-
-				<!-- Hands-on Work -->
+					<!-- Class Agenda -->
 				<section>
-					<h2>Let's Develop It!</h2>
-					<p>Instructions...</p>
+					<h2>AGENDA</h2>
+					<ul>
+						<li>Review of Transition &amp; Transforms</li>
+						<li>Animations &amp; Keyframes</li>
+						<li>Accessibility-media queries</li>
+						<li>Clip Path</li>
+						<li>Resources &amp; next steps</li>
+					</ul>
 				</section>
+				<h3>Intro to Animations & Keyframes</h3>
+			</section>
+			<section>
+				<h3>Animation vs Transitions</h3>
+				<h4>How is the animation property different from the transition property?</h4>
+					<ul>
+						<li class = "fragment">can run automatically, as well as be triggered by a user</li>
+						<li class = "fragment">can loop infinitely</li>
+						<li class = "fragment">for more complex movements</li>
+						<li class = "fragment">we can change more than just the start &amp; finished states.</li>
+					</ul>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">mdn docs | CSS Animations</a>
+					</small>
+				<!-- Keyframes -->
+				<!-- Naming animations -->
+				<!-- https://codepen.io/morganejla/pen/wvpVyME -->
+			</section>
+			<section>
+				<h2>Accessibility</h2>
+					<p>we want everyone to have access to what we create for the web. </p>
+					
+					
+			</section>
+			<section>
+				<h2>Accessibility</h2>
+				<p><code>prefers-reduced-motion</code> is a media query used to detect if they have settings that minimize no essential motion. </p>
+				<small class = "credit">
+					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion>mdn docs | prefers-reduced-motion.</a>
+				</small>
+			</section>
+			<section>
+				<h2>Accessibility</h2>
+				<p>When starting a project its good practice to add a <br> 
+					prefers-reduced motion media query at the bottom of your CSS.</p>
+				<pre>
+					<code class="css">
+@media (prefers-reduced-motion:reduce) {
+*,
+*::before,
+*::after {
+	animation-duration: 0.001s !important;
+	transition-duration: 0.001s !important;
+}
+}
+					</code>
+				</pre>
+				<small>
+				<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">mdn docs | prefers-reduced-motion</a>
+				</small>
+			</section>
+			<section>
+				<p><code>Animation </code> has three required components</h3>
+				
+						<ul>
+							<li class = "fragment"><code>animation-name</code> </li>
+							<li class = "fragment"><code>animation-duration</code></li>
+							<li class = "fragment"><code>keyframes</code></li>
+						</ul>
+						<pre>
+							<code class="css">
+	div{
+		width:150px;
+		height:150px;
+		background-color: #fe6437;
+		animation-name:whatever;
+		animation-duration:3s;
+	}
+							</code>
+						</pre>
+					<small><a href = "https://codepen.io/morganejla/pen/gOvaWrO" target="_blank">animation-demo | codepen.io</a>
+					</small>
+			</section>
+			<section>
+				<h4>@keyframes</h4>
+				<p>defines the start and finish of the animation</p>
+				<p class ="fragment">...and the steps in between</p>
+				<small>
+				<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target ="_blank">mdn docs | @keyframes</a>
+				</small>
+
+			</section>
+			<section>
+				<h3>@keyframe keywords</h3>
+					<p>keywords we use to determine the steps in the @keyframe</p>
+						<ul>
+							<li><code>from</code> &amp; <code>to</code></li>
+							<li><code>percentages</code></li>
+							<li><code>px</code></li>
+					
+						</ul>
+						<pre>
+							<code class="css">
+	@keyframes whatever{
+		0% { transform: translateX(0);}
+		10%{transform:translateX(100px);}
+		100% {transform: translate(500px, 400px);}
+	}
+							</code>
+						</pre>
+			</section>
+			<section>
+				<h3>Practice</h3>
+				<p>Let's see the different ways we can write @keyframes</p>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/NWXQvvX">codepen.io | keyframes in action</a>
+				</small>
+
+			</section>
+			<section>
+				
+					<h2>Let's Develop It!</h2>
+					<p>changing a background animation</p>
+					<a href = "https://codepen.io/morganejla/pen/wvpVyME">codepen.io | changing background colors</a>
+			
+			</section>
+			<section>
+				<h3>additional animation properties</h3>
+					<ul>
+						<li class = "fragment"><code>animation-timing-function</code></li>
+						<li class = "fragment"><code>animation-delay</code></li>
+						<li class = "fragment"><code>animation-iteration-count</code></li>
+						<li class = "fragment"><code>animation-direction</code></li>
+						<li class = "fragment"><code>animation-fill-mode</code></li>
+						<li class = "fragment"><code>animation-play-state</code></li>
+					</ul>
+					<br>
+					<br>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank">mdn doc | animation properties</a>
+					</small>
+					
+			</section>
+			<section>
+				<h2>Let's Develop It</h2>
+				<h2>properties in action</h2>
+				<p>
+				<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target = "_blank">codepen.io | animation code along</a>	
+				</p>
+			
+
+			</section>
+			
+	
+	</code>
+	</pre>
+						
+
+	</section>
+		<section>
+				<h3>animation shorthand</h3>
+				<pre>
+					<code class="css">
+div {
+animation: |animation-name|animation-duration| animation-timing-function| animation-delay| animation-iteration-count | animation-direction | animation-fill-mode| animation-play-state;
+}
+
+					</code>
+				</pre>
+				<p>
+				<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target="_blank">codepen.io |
+					 animation code along part 2</a>
+				</p>
+			</section>	
+			<section>
+				<h3>Clip-path</h3>
+				<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
+				<p class= "fragment">we do this with shapes we create out of points on our page.</p>
+				<small>
+					<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
+				</small>
+			</section>
+			<section>
+				<h3>Clip-path</h3>
+				<p>we don't have to figure out the coordinates ourselves</p>
+				<p>we have <a href = "https://bennettfeely.com/clippy/" target="_blank">Clippy</a> </p>
+				<pre>
+					<code class="css">
+.element {
+transition:all 0.5s;
+ clip-path: circle(9.4% at 81% 16%); 
+}
+					</code>
+				</pre>
+				
+			</section>
+			<section>
+				<h3>Clip-path-practice</h3>
+				<p>here is a short exercise to get you started with the clip-path</p>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/bGLVrNz" target="_blank">codepen.io | clip-path code along</a>
+				</small>
+				<br>
+				<small>
+					<p>a source I like to use for lorem ipsum</p>
+				<a href = "http://www.cupcakeipsum.com/paragraphs/5/length/short/with_love/false/start_with_cupcake/false/seed/6e79100068bcccac53cee0096af1e18e699d1f33dc77ba3ef3757b8198076f7a">cupcakeipsum</a>
+				</small>
+				
+			</section>
+			<!--Further Reading-->
+			<section>
+				<h2>Further Reading</h2>
+				<p>here are some of my favorite sources for CSS Animations</p>
+				<ul>
+					<li><a href = "https://cssanimation.rocks/" target="_blank">CSS Animation Rocks</a></li>
+					<li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">mdn webdocs | css animations</a></li>
+					<li><a href ="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS tricks</a></li>
+					<li><a href="https://animate.style/" target ="_blank">Animate.css</a></li>
+
+				</ul>
+			</section>
+			<section>
+				<h2>Resources for projects</h2>
+				
+				<ul>
+					<li><a href = "https://bennettfeely.com/clippy/" target="_blank">Clip-path maker</a></li>
+					<li><a href = "https://heropatterns.com/" target="_blank">hero patterns</a></li>
+					
+
+				</ul>
+			</section>
+			<section>
+				<h2>What's next?</h2>
+				
+	
+			
 
 				<!-- Course Conclusion -->
 				<section>
@@ -162,10 +306,6 @@
 					<h2>Q&A</h2>
 				</section>
 
-				<!-- Resources -->
-				<section>
-					<h2>Resources</h2>
-				</section>	
 
 				<!-- MUST USE/SHOW SLIDE -->
 				<!-- GDI Promo - Upcoming Courses -->
@@ -182,8 +322,10 @@
 				<!-- Instructor and/or TA Contact -->
 				<section>
 					<h3>Keep in Touch</h3>
-					<p style="font-size: 16px; font-style: italic;">(Add instructor and TA contact info as appropriate.<br>Comment out this note.)</p>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Add instructor and TA contact info as appropriate.<br>Comment out this note.) -->
+					<p>Morgan Jones </p> 
 					<p>Contact</p>
+					<a href = "https://github.com/MorganEJLA" target="_blank">Github</a>
 				</section>
 
 				<!-- Thank You -->
