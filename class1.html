@@ -238,19 +238,19 @@
 						<li>When writing in CSS you can use Vendor Prefixes</li>
 							<!-- Vendor Prefix Code Example-->
 				
-							<pre>
-								<code class="css">
-	h1 {
-		-webkit-transition: all 3s ease-out;
-			transition: all 3s ease-out;
-	}
+					<pre>
+						<code class="css">
+h1 {
+	-webkit-transition: all 3s ease-out;
+		transition: all 3s ease-out;
+}
 
-	h1{	-webkit-transform: translate(-50%, -50%);
-      		-ms-transform: translate(-50%, -50%);
-			  	transform: translate(-50%, -50%);
-	}
-								</code>
-							</pre>
+h1{	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+}
+						</code>
+					</pre>
 						<p class = "fragment"><em>These exercises will work without vendor prefixes</em></p>
 					<small class = "fragment">For information on vendor prefixes - <a href = "https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target= "_blank">Vendor Prefixes</a>
 					</small>
@@ -275,8 +275,8 @@
 					<p>We name the property that we want to change.</p>
 				
 					
-<pre>
-	<code class="css">
+				<pre>
+					<code class="css">
 							
 button {
   background-color: green;
@@ -286,8 +286,8 @@ button {
 button:hover{
 	background-color:orange;
 }
-	</code>
-</pre>
+					</code>
+				</pre>
 					
 				</section>
 				<section>
@@ -603,19 +603,19 @@ div {
 					<p><em> pseudo-elements </em> let you style a part of a selected element.
 						<pre>
 							<code class="css">
-	a::before{
-		content:'';
-		position:absolute;
-		left:0;
-		top:0;
-		background-color:#fe6437;
-		height:100%;
-		width:100%;
-		z-index:-1;
-		transform-origin:top left; 
-		transform:rotate(-90deg);
-		transition:transform 1s;
-		}
+a::before{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#fe6437;
+	height:100%;
+	width:100%;
+	z-index:-1;
+	transform-origin:top left; 
+	transform:rotate(-90deg);
+	transition:transform 1s;
+	}
 								  
 							</code>
 						</pre>
@@ -659,23 +659,23 @@ div {
 					</ul>
 					<pre>
 						<code class="css">
-	body{
-		perspective:500px;
-	}
+body{
+	perspective:500px;
+}
 
-	div{
-		height:150px;
-		width:150px;
-		background-color:#e58064;
-		position:absolute;
-		top:50%;
-		left:50%;
-		transition:transform 2s;
-	}
+div{
+	height:150px;
+	width:150px;
+	background-color:#e58064;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transition:transform 2s;
+}
 
-	div:hover{
-		transform: translateZ(300px);
-	}
+div:hover{
+	transform: translateZ(300px);
+}
 						</code>
 					</pre>
 					
@@ -801,11 +801,11 @@ div {
 							</ul>
 							<pre>
 								<code class="css">
-		@keyframes whatever{
-			0% { transform: translateX(0);}
-			10%{transform:translateX(100px);}
-			100% {transform: translate(500px, 400px);}
-		}
+@keyframes whatever{
+	0% { transform: translateX(0);}
+	10%{transform:translateX(100px);}
+	100% {transform: translate(500px, 400px);}
+}
 								</code>
 							</pre>
 				</section>
