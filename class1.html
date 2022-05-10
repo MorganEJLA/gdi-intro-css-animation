@@ -96,10 +96,17 @@
 
 				<!-- OPTIONAL: TAs Intro -->
 				<section>
-					<p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p> -->
 					<h2>TA Intro(s)</h2>
-					<p>Names, titles</p>
+					<p>Faraja Thompson</p>
+					<p>Educator</p>
 				</section>
+				<section>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p> -->
+					
+					<p>Anne Katzeff</p>
+				</section>
+
 
 				<!-- Student Intros / IceBreaker -->
 				<!-- <section>
@@ -191,14 +198,14 @@
 				</section>
 				<!--Accessibility-->
 				<section>
-					<h3>Media query for prefers-reduced-motion</h3>
+					<h3>there are media queries we use: </h3>
 					<br>
 					<p><em>prefers-reduced-motion</em>
 					is a CSS feature for users with non-essential motion settings.</p>
 					
 					<small class = "credit">
 						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#examples"
-						target= "_blank">MDN web docs: prefers-reduced-motion</a>
+						target= "_blank"> mdn webdocs | prefers-reduced-motion</a>
 					</small>
 				</section>
 				<!--Setting up Our Environment-->
@@ -284,7 +291,7 @@ button {
   transition-duration:300ms;
 }
 button:hover{
-	background-color:orange;
+  background-color:orange;
 }
 					</code>
 				</pre>
@@ -295,7 +302,7 @@ button:hover{
 					<h3>Transitions &amp; pseudo-classes</h3>
 					<p>a <em>pseudo-class</em> is added to a selector that specifies a special state of the selected element(s)</p>
 					<small class = "credit">
-						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target = "_blank">mdn doc | pseudo-classes </a>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target = "_blank">mdn docs | pseudo-classes </a>
 					</small>
 					<pre>
 						<code class="css">
@@ -305,11 +312,11 @@ button {
 	background-color: green;
 	transition-property:background-color;
 	transition-duration:300ms;
-	}
+}
 
 button:hover{
-		background-color:orange;
-	}
+	background-color:orange;
+}
 						</code>
 					</pre>
 				</section>
@@ -320,9 +327,11 @@ button:hover{
 					<h3>Transition-Duration</h3>
 					<p>We set the time of the transition in seconds(s) or milliseconds(ms)</p>
 					
-			<--Codesnippet-->
+			<!--Codesnippet-->
+
 					<pre>
 						<code class="css">
+							
 button {
 	background-color: green;
 	transition-property:background-color;
@@ -334,7 +343,7 @@ button:hover{
 	}
 						</code>
 					</pre>
-					<small><a href = "https://codepen.io/morganejla/pen/OJzeBqe" target="_blank">Let's see it on Codepen</a>
+					<small><a href = "https://codepen.io/morganejla/pen/OJzeBqe" target="_blank">codepen.io | button-hover</a>
 					</small>
 				</section>
 				
@@ -367,7 +376,7 @@ button{
 					<code>transition-timing-function</code>
 					<p>A CSS Property that sets a speed curve, allowing you to change the speed during the transition</p>
 					<small>
-					<a href = "https://codepen.io/morganejla/pen/BaJgEjZ" target = "_blank">Codepen timing functions</a>
+					<a href = "https://codepen.io/morganejla/pen/BaJgEjZ" target = "_blank">codepen.io | transition-timing-functions</a>
 					</small>
 				</section>
 				<section>
@@ -375,24 +384,8 @@ button{
 					<br>
 					<p>specifies the duration to wait before starting the transition of the property.</p>
 				</section>
-				<section>
-					<h3>Shorthand</h3>
-					<p>You can write the transition sub-properties in shorthand, in this order.</p>
-					<pre>
-						<code class="css">
-button {
-	transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-}
-
-button{
-	transition: background-color 3s ease-in 1s;
-}
-						</code>
-					</pre>
-				<small>
-				<a href = "https://codepen.io/morganejla/pen/eYywwJE" target = "_blank">Codepen.io | shorthand practice</a>
-				</small>
-				</section>
+			
+				
 				<section>
 					<h3>Shorthand keyword: <code>all</code></h3>
 					<pre>
@@ -414,7 +407,7 @@ button:hover{
 </code>
 </pre>
 				<small>
-				<a href = "https://codepen.io/morganejla/pen/bGLdMyp" target = "_blank">Codepen.io | shorthand practice</a>
+				<a href = "https://codepen.io/morganejla/pen/bGLdMyp" target = "_blank"> codepen.io | shorthand practice</a>
 				</small>
 				</section>
 
@@ -431,7 +424,7 @@ button:hover{
 					</ul>
 					<p class = "fragment">General rule: We can use transition on properties expressed by numbers (<code>width, height, color</code>)</p>
 					<small>
-					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target ="_blank">mdn docs | CSS Animated Properties</a>
+					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target ="_blank"> mdn docs | CSS Animated Properties</a>
 					</small>
 
 				</section>
@@ -457,7 +450,7 @@ button:hover{
 						<br>
 						<br>
 					<small>
-					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target = "_blank">MDN web docs - transform</a>
+					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target = "_blank">mdn docs | transform</a>
 					</small>
 				</section>
 				
@@ -475,7 +468,7 @@ button:hover{
 					<br>
 					<!--Hands on Work-->
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
 					</small>
 				</div>
 				</section>
@@ -490,7 +483,7 @@ button:hover{
 						</small>
 						<br>
 						<small>
-							<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+							<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo </a>
 						</small>
 					</div>
 				</section>
@@ -502,14 +495,24 @@ button:hover{
 					<pre>
 						<code class="css">
 div {
- transform: scale(2);
+	transform: scale(0);
+	<!-- When the scale is zero, we don't see the element at all. -->
+}								
+div {
+ transform: scale(1);
+ <!-- When the scale is one, the element stays in place. -->
+
+}
+div{
+	transform:scale(2);
+	<!-- When the scale is 2 the element doubles in size. -->
 }
 						</code>
 					</pre>
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="_blank">mdn docs | transform-function : scale()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
 					</small>
 				</section>
 				<section>
@@ -526,7 +529,7 @@ div {
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="_blank">mdn docs | transform-function : translate()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank"> codepen.io | transform demo</a>
 					</small>
 				</section>
 				<section>
@@ -543,7 +546,7 @@ div {
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : rotate()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
 					</small>
 				</section>
 				<section>
@@ -560,7 +563,7 @@ div {
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : skew()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">Transform in action - Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
 					</small>
 				</section>
 				
@@ -573,7 +576,7 @@ div {
 						<li>default for rotating is the center.</li>
 					</ul>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/bGaXrZK" target= "_blank">transform-origin | Codepen.io</a>
+						<a href = "https://codepen.io/morganejla/pen/bGaXrZK" target= "_blank">codepen.io | transform demo</a>
 					</small>
 					
 					
@@ -583,7 +586,7 @@ div {
 					<p>Put Transition & Transform together</p>
 					
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/dydowmq" target="_blank">transition &amp; transform | Codepen.io</a></small>
+						<a href = "https://codepen.io/morganejla/pen/dydowmq" target="_blank">codepen.io | transition &amp; transform together</a></small>
 				</section>
 				<section>
 					<h3>Something to remember with <code>transform</code></h3>
@@ -643,7 +646,7 @@ a::before{
 					<!--Hands-on-work-->
 					<h2>Let's Develop It!</h2>
 					<p>let's add the pseudo-elements to our button project.</p>
-					<a href = "https://codepen.io/morganejla/pen/xxYGmLP">button project | Codepen.io </a>
+					<a href = "https://codepen.io/morganejla/pen/xxYGmLP">codepen.io | project button </a>
 				</section>
 				<section>
 					<h4>perspective &amp; the Z axis</h4>
@@ -652,9 +655,13 @@ a::before{
 				<section>
 					<h4>the Z axis</h4>
 					<ul>
-						<li>uses the Z axis</li>
 						<li>the Z axis is perpendicular to the x & y axis.</li>
 						<li>uses the <code>translate(): </code> property to move the element.</li>
+					</ul>
+				</section>
+				<section>
+					<h4>the Z axis </h4>
+					<ul>
 						<li>uses the <code>perspective: </code> property which is the distance between the viewer and the screen. </p></li>
 					</ul>
 					<pre>
@@ -689,7 +696,7 @@ div:hover{
 					<a href = "https://codepen.io/morganejla/pen/wvpVrdQ">translateZ() & perspective</a>
 				</section>
 				<section>
-					<h2>Let's Develop It!</h2>
+					<h3>Let's Develop It!</h3>
 					
 					<a href = "https://codepen.io/morganejla/pen/RwxXxVR">codepen.io | rotating a card</a>
 
@@ -1001,7 +1008,7 @@ div {
 				<!-- Update with Course Name -->
         <div class="copyright">
 					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
-					<p>Add Class Name</p>
+					<p>Intro to CSS Animations</p>
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
         </div>
       </footer>
