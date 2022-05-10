@@ -382,25 +382,66 @@ button{
 				</section>
 				<!-- Additional Transition Timing Functions -->
 				<section>
+					<h3>Additional Transition Timing Functions</h3>
 					<p><code>cubic-bezier</code></p>
 					<p><code>steps</code></p>
 					<pre>
-						<code>
-<div>
+						<code class = "css">
+button{
 	transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
-</div>
-<div>						
+}
+
+button{						
 	transition-timing-function: steps(6, end);
-</div>
+}
 						</code>
 					</pre>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#values" target= "_blank">mdn docs | cubic bezier &amp; steps</a>
+					</small>
 				</section>
 				<section>
 					<code>transition-delay</code>
 					<br>
 					<p>specifies the duration to wait before starting the transition of the property.</p>
+					<pre>
+						<code class = "css">
+button{
+	transition-delay: 250ms;
+	transition-property: margin-right;
+}
+
+						</code>
+					</pre>
+
 				</section>
-			
+				<section>
+					<h3>setting more than one property to be changed</h3>
+					<pre>
+						<code class = "css">
+button {
+	width:20px;
+	height:40px;
+	background-color:#da7b93;
+	transition: height 1s, background-color 2s;
+ /* we can write the transition-property and duration for each,
+ separated by a comma. */
+
+}
+
+button:hover{
+	width:50px;
+	background-color:#da8735;
+
+}
+						</code>
+					</pre>
+					<small>
+						<p>
+						<a href = "https://codepen.io/morganejla/pen/bGLdMyp" target = "_blank">codepen.io | shorthand transitions - multiple properties</a>
+						</p>
+					</small>
+				</section>
 				
 				<section>
 					<h3>Shorthand keyword: <code>all</code></h3>
@@ -413,6 +454,7 @@ button {
 	transition: all 2s;
 
 }
+
 button:hover{
 	width:50px;
 	background-color:#da8735;
@@ -471,7 +513,7 @@ button:hover{
 				
 				<section>
 					<h4>How it Works</h4>
-					<p>The <code>transform</code> property uses keywords:</p>
+					<p>The <code>transform</code> property uses function values:</p>
 						<ul>
 							<li><code>scale()</code></li>
 							<li><code>translate()</code></li>
@@ -479,20 +521,19 @@ button:hover{
 							<li><code>skew()</code></li>
 						</ul>
 				
-				<div>
-					<br>
-					<!--Hands on Work-->
-					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
-					</small>
-				</div>
+			
 				</section>
 				<!--Accessibility-->
 				<section>
 					<h3>Transforms &amp; Accessibility</h3>
-					<p><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform#accessibility_concerns" target ="_blank">mdn docs | Accessibility concerns</a></p>
+						<div>
+						  <img src="assets/imgs/stock-img/accessibility-scale.png" alt="accesibility-screenshot-mdn docs">
+						</div>
+						
+						<small>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">mdn docs | transform-accessibility-concerns</a>
+						</small>
 				</section>
-
 				<!-- Transform functions & definitions -->
 				
 				<section>
@@ -516,18 +557,25 @@ button:hover{
 					<pre>
 						<code class="css">
 div {
+	width:100px;
+	height:100px;
 	transform: scale(0);
 /*When the scale is zero, we don't see the element at all.*/
 }
 
 div {
+	width:100px;
+	height:100px;
  	transform: scale(1);
 /* When the scale is one, the element stays in place. */
 
 }
 div{
+	width:100px;
+	height:100px;
 	transform:scale(2);
 /* When the scale is 2 the element doubles in size. */
+/* it is now 200px wide and tall */
 }
 						</code>
 					</pre>
@@ -560,7 +608,7 @@ div {
 					<p>rotates an element on a fixed point.</p>
 					<p class = "fragments"> values are set in degrees </p>
 					<small>
-						Other values used are turns and rads. we will be focusing on degrees.
+						Other values used are turns and radians. we will be focusing on degrees.
 					</small>
 
 					<pre>
@@ -677,7 +725,7 @@ a::before{
 				</section>
 				<section>
 					<h4>perspective &amp; the Z axis</h4>
-					<p class = "fragment">working in 3D</p>
+					<h4 class = "fragment">working in 3D</p>
 				</section>		
 				<section>
 					<h4>the Z axis</h4>
@@ -720,12 +768,12 @@ div:hover{
 				<section>
 					<h3>Practice</h3>
 					<br>
-					<a href = "https://codepen.io/morganejla/pen/wvpVrdQ">translateZ() & perspective</a>
+					<a href = "https://codepen.io/morganejla/pen/wvpVrdQ" target="_blank">translateZ() & perspective</a>
 				</section>
 				<section>
 					<h3>Let's Develop It!</h3>
 					
-					<a href = "https://codepen.io/morganejla/pen/RwxXxVR">codepen.io | rotating a card</a>
+					<a href = "https://codepen.io/morganejla/pen/RwxXxVR" target="_blank">codepen.io | rotating a card</a>
 
 				</section>
 
