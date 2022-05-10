@@ -105,6 +105,7 @@
 					<!-- <p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p> -->
 					
 					<p>Anne Katzeff</p>
+					<p>Web Designer &and; Front-End Developer, Artist, Teacher</p>
 				</section>
 
 
@@ -394,7 +395,6 @@ button {
 	width:20px;
 	height:40px;
 	background-color:#da7b93;
-	/* Apply to all changed properties */
 	transition: all 2s;
 
 }
@@ -472,6 +472,12 @@ button:hover{
 					</small>
 				</div>
 				</section>
+				<!--Accessibility-->
+				<section>
+					<h3>Transforms &amp; Accessibility</h3>
+					<p><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform#accessibility_concerns" target ="_blank">mdn docs | Accessibility concerns</a></p>
+				</section>
+
 				<!-- Transform functions & definitions -->
 				
 				<section>
@@ -496,16 +502,17 @@ button:hover{
 						<code class="css">
 div {
 	transform: scale(0);
-	<!-- When the scale is zero, we don't see the element at all. -->
-}								
+/*When the scale is zero, we don't see the element at all.*/
+}
+
 div {
- transform: scale(1);
- <!-- When the scale is one, the element stays in place. -->
+ 	transform: scale(1);
+/* When the scale is one, the element stays in place. */
 
 }
 div{
 	transform:scale(2);
-	<!-- When the scale is 2 the element doubles in size. -->
+/* When the scale is 2 the element doubles in size. */
 }
 						</code>
 					</pre>
@@ -518,6 +525,7 @@ div{
 				<section>
 					<p><code>translate</code></p>
 					<p>repositions an element in horizontal or vertical directions.</p>
+					<small>values are in length or percentage</small>
 
 					<pre>
 						<code class="css">
@@ -535,6 +543,10 @@ div {
 				<section>
 					<p><code>rotate()</code></p>
 					<p>rotates an element on a fixed point.</p>
+					<p class = "fragments"> values are set in degrees </p>
+					<small>
+						Other values used are turns and rads. we will be focusing on degrees.
+					</small>
 
 					<pre>
 						<code class="css">
@@ -552,7 +564,7 @@ div {
 				<section>
 					<p><code>skew()</code></p>
 					<p>skews an element on the 2D plane.</p>
-
+				
 					<pre>
 						<code class="css">
 div {
@@ -646,7 +658,7 @@ a::before{
 					<!--Hands-on-work-->
 					<h2>Let's Develop It!</h2>
 					<p>let's add the pseudo-elements to our button project.</p>
-					<a href = "https://codepen.io/morganejla/pen/xxYGmLP">codepen.io | project button </a>
+					<a href = "https://codepen.io/morganejla/pen/xxYGmLP" target= "_blank">codepen.io | project button </a>
 				</section>
 				<section>
 					<h4>perspective &amp; the Z axis</h4>
@@ -728,7 +740,7 @@ div:hover{
 						<small>
 							<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">mdn docs | CSS Animations</a>
 						</small>
-					<!-- Keyframes -->
+					<!- Keyframes -->
 					<!-- Naming animations -->
 					<!-- https://codepen.io/morganejla/pen/wvpVyME -->
 				<!-- </section>
