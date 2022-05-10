@@ -77,11 +77,11 @@
 			</section>
 			<section>
 				<h2>Accessibility</h2>
-				<p><code>prefers-reduced-motion</code> is a media query used to detect if they have settings that minimize no essential motion. </p>
+				<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize no essential motion. </p>
 				<small class = "credit">
-					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank">mdn docs | prefers-reduced-motion.</a>
+					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank"> mdn docs | prefers-reduced-motion.</a>
 				</small>
-			</section>
+			</section> 
 			<section>
 				<h2>Accessibility</h2>
 				<p>When starting a project its good practice to add a <br> 
@@ -103,7 +103,7 @@
 				</small>
 				<br>
 				<small>
-					<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank">mdn docs | prefers-reduced-motion>CSS Tricks | Introduction to reduced motion media query</a>
+					<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank"> CSS Tricks | Introduction to reduced motion media query</a>
 					</small>
 			</section>
 			<section>
@@ -193,7 +193,7 @@ div{
 
 				<!-- Animation-Timing-function -->
 					<p><code>animation-timing-function</code></p>
-					<p>sets how an animation progresses through the duration of each cycle./p>
+					<p>sets how an animation progresses through the duration of each cycle.</p>
 
 					<pre>
 						<code class="css">
@@ -208,7 +208,7 @@ animation-timing-function:ease-in;
 						<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">Animation-timing-function | Codepen.io</a>
 					</small>
 			</section>
-
+			<section>
 				<!--animation-delay -->
 				<p><code>animation-delay</code></p>
 				<p>sets the amount of time to wait before applying the animation to the element. </p>
@@ -234,9 +234,9 @@ animation-delay:2s;
 
 				<pre>
 					<code class="css">
-div{
+
 animation-fill-mode: forwards;
-}
+
 
 					</code>
 				</pre>
@@ -254,9 +254,9 @@ animation-fill-mode: forwards;
 
 			<pre>
 				<code class="css">
-div{
+
 animation-direction:alternate;
-}
+
 
 		</code>
 	</pre>
@@ -284,49 +284,46 @@ animation-play-state:paused;
 		<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" target="_blank">mdn docs | animation-play-state</a></small>
 		<br>
 		<small>
-			<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">Animation-timing-function | Codepen.io</a>
+			<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">animation-play-state| Codepen.io</a>
+		</small>
+	</section>
+	<section>
+		<h3>animation shorthand</h3>
+		<pre>
+			<code class="css">
+div {
+animation: |animation-name|animation-duration| animation-timing-function| animation-delay| animation-iteration-count | animation-direction | animation-fill-mode| animation-play-state;
+}
+
+			</code>
+		</pre>
+		</section>
+		<section>
+			<h2>Let's Develop It</h2>
+			<h2>properties in action</h2>
+			<p>
+			<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target = "_blank">codepen.io | animation code along</a>	
+			</p>
+		
+		</section>
+		
+	
+	<section>
+		<h3>Clip-path</h3>
+		<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
+		<p class= "fragment">we do this with shapes we create out of points on our page.</p>
+		<small>
+			<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
 		</small>
 	</section>
 		
-			<section>
-				<h2>Let's Develop It</h2>
-				<h2>properties in action</h2>
-				<p>
-				<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target = "_blank">codepen.io | animation code along</a>	
-				</p>
-			
-
-			</section>
-			
 	
 	</code>
 	</pre>
 						
 
 	</section>
-		<section>
-				<h3>animation shorthand</h3>
-				<pre>
-					<code class="css">
-div {
-	animation: |animation-name|animation-duration| animation-timing-function| animation-delay| animation-iteration-count | animation-direction | animation-fill-mode| animation-play-state;
-}
-
-					</code>
-				</pre>
-				<p>
-				<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target="_blank">codepen.io |
-					 animation code along part 2</a>
-				</p>
-			</section>	
-			<section>
-				<h3>Clip-path</h3>
-				<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
-				<p class= "fragment">we do this with shapes we create out of points on our page.</p>
-				<small>
-					<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
-				</small>
-			</section>
+		
 			<section>
 				<h3>Clip-path</h3>
 				<p>we don't have to figure out the coordinates ourselves</p>
