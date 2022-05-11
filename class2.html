@@ -51,6 +51,44 @@
 			</section>
 			<section>
 				<h2>Questions about Transitions &amp; Transforms?</h2>
+					<p class = "fragment">Let's review...&amp; practice!</p>
+					<ul>
+						<li class = "fragment">
+							<a href = "https://codepen.io/morganejla/pen/bGLdMyp?editors=0110" target="_blank">practicing transitions</a>
+							<br>
+							<br>
+							<small>
+								<a href = "https://codepen.io/morganejla/pen/QWaXoJM" target="_blank">reference-codepen: examples of properties we can transition</a>
+							</small>
+						</li>
+					</ul>
+			</section>
+			<section>
+				<h2>Questions about Transitions &amp; Transforms?</h2>
+				<p class = "fragment">Let's review...&amp; practice!</p>
+				<br>
+				<br>
+				<ul>
+					<li class = "fragment">
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz" target="_blank">practicing transforms</a> 
+					</li>
+				
+				</ul>
+			</section>
+			<section>
+				<h2>Questions about Transitions &amp; Transforms?</h2>
+				<p class = "fragment">Let's review...&amp; practice!</p>
+				<br>
+				<br>
+				<ul>
+					<li class = "fragment">
+						<a href = "https://codepen.io/morganejla/pen/wvpVrdQ" target="_blank">translateZ() & transforms</a> 
+					</li>
+				
+				</ul>
+			</section>
+			<section>
+				<h2>Intro to Animation & Keyframes</h2>
 			</section>
 			<section>
 				<h3>Animation vs Transitions</h3>
@@ -62,7 +100,7 @@
 						<li class = "fragment">we can change more than just the start &amp; finished states.</li>
 					</ul>
 					<small>
-						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">mdn docs | CSS Animations</a>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank">mdn docs | CSS Animations</a>
 					</small>
 				<!-- Keyframes -->
 				<!-- Naming animations -->
@@ -84,18 +122,25 @@
 			</section> 
 			<section>
 				<h2>Accessibility</h2>
-				<p>When starting a project its good practice to add a <br> 
-					prefers-reduced motion media query at the bottom of your CSS.</p>
+				<p>prefers-reduce-motion example</p>
 				<pre>
 					<code class="css">
-@media (prefers-reduced-motion:reduce) {
-*,
-*::before,
-*::after {
-	animation-duration: 0.001s !important;
-	transition-duration: 0.001s !important;
+.animation{
+
+	animation:pulse 1s linear infinite both;
+
 }
+
+/*per mdn docs - tone down the animation to avoid vestibular motion triggers like scaling or panning large objects*/
+
+
+@media(prefers-reduce-motion){
+	.animation{
+		animation-name:dissolve;
+	}
 }
+		
+
 					</code>
 				</pre>
 				<small>
