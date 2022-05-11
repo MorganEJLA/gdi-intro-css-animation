@@ -29,13 +29,21 @@ The Objectives of this course is to introduce students to the transition and ani
 ## Suggested Exercises
 
 - demo of all of the properties. 
+- in class two review the previous lesson with links to previous codepens for reference.
+  You can create new a new exercise with links to the previous codepends.
 - code along on to a project to use outside of class. 
 
 ## Resources
+- MDN Web Docs
+- CSS Tricks
+- Clippy
+- Cupcake Ipsum
+- codepen.io
+- webdev
+    For Accessibility Demo
+- https://webkit.org/blog-files/prefers-reduced-motion/prm.htm
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
 
 ## FAQs-Notes-Tips
 
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- 
