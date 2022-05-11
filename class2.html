@@ -51,10 +51,10 @@
 			</section>
 			<section>
 				<h2>Questions about Transitions &amp; Transforms?</h2>
-					<p class = "fragment">Let's review...&amp; practice!</p>
-					<ul>
-						<li class = "fragment">
-							<a href = "https://codepen.io/morganejla/pen/bGLdMyp?editors=0110" target="_blank">practicing transitions</a>
+					<p>Let's review...&amp; practice!</p>
+					<p class =  "fragment">
+							<a href = "https://codepen.io/morganejla/pen/OJzeBqe?editors=0110" target="_blank">practicing transitions</a>
+					</p>
 							<br>
 							<br>
 							<small>
@@ -115,7 +115,7 @@
 			</section>
 			<section>
 				<h2>Accessibility</h2>
-				<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize no essential motion. </p>
+				<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize non-essential motion. </p>
 				<small class = "credit">
 					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank"> mdn docs | prefers-reduced-motion.</a>
 				</small>
@@ -131,12 +131,12 @@
 
 }
 
-/*per mdn docs - tone down the animation to avoid vestibular motion triggers like scaling or panning large objects*/
-
-
 @media(prefers-reduce-motion){
 	.animation{
-		animation-name:dissolve;
+		animation-name:none;
+
+/*here is where you write the styling that you want to
+ replace the animation with*/
 	}
 }
 		
@@ -150,6 +150,16 @@
 				<small>
 					<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank"> CSS Tricks | Introduction to reduced motion media query</a>
 					</small>
+			</section>
+			<!--Prefers Reduce Motion in Action-->
+			
+			<section>
+				<h2>prefers reduce motion in action</h2>
+				<a href="https://webkit.org/blog-files/prefers-reduced-motion/prm.htm" target="_blank">webkit.org</a>
+				<br>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/MWQeRZM?editors=0110" target ="_blank">codepen.io | prefers-reduced-motion-demo</a>
+				</small>
 			</section>
 			<section>
 				<p><code>Animation </code> has three required components</h3>
@@ -295,7 +305,7 @@ animation-fill-mode: forwards;
 		<section>
 	<!-- animation-direction -->
 			<p><code>animation-direction</code></p>
-			<p>declares whether an animation should play forward, background, or alternate back &amp; and forth.</p>
+			<p>declares whether an animation should play forwards, backwards, or alternate back &amp; and forth.</p>
 
 			<pre>
 				<code class="css">
@@ -327,10 +337,7 @@ animation-play-state:paused;
 			</code>
 		</pre>		
 		<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" target="_blank">mdn docs | animation-play-state</a></small>
-		<br>
-		<small>
-			<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">animation-shorthand| Codepen.io</a>
-		</small>
+		
 	</section>
 	<section>
 		<h3>animation shorthand</h3>
@@ -409,6 +416,7 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 					<li><a href ="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS tricks</a></li>
 					<li><a href="https://animate.style/" target ="_blank">Animate.css</a></li>
 					<li><a href = "https://www.kevinpowell.co" target= "_blank">Kevin Powell - CSS Evangelist</a></li>
+					<li><a href = "https://100dayscss.com/about/">100daysCSS Challenge</a></li>
 
 				</ul>
 			</section>
