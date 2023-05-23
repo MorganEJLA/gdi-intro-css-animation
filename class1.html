@@ -268,7 +268,10 @@ h1{	-webkit-transform: translate(-50%, -50%);
 
 				<!--Transitions-->
 				<section>
-					<h3>Transitions</h3>
+					<h3>Intro to CSS Transitions</h3>
+				</section>
+				<section>
+					<h3>What are CSS transitions? </h3>
 					<p><code>transitions</code> enable you to control the transition between two states of an element.</p>
 					<p> Transitions require two sub properties to work:</p>
 						<ul>
@@ -322,6 +325,9 @@ button:hover{
 						</code>
 					</pre>
 				</section>
+				<section>
+					<p>The pseudo class you may be familiar with, is a <em>user-action</em> user class <code>:hover</code></p>
+				</section>
 				
 				<!--Transition Duration-->	
 
@@ -345,7 +351,7 @@ button:hover{
 }
 						</code>
 					</pre>
-					<small><a href = "https://codepen.io/morganejla/pen/OJzeBqe" target="_blank">codepen.io | button-hover</a>
+					<small><a href = "https://codepen.io/morganejla/pen/KKGJWKB" target="_blank">codepen.io | css transition property practice</a>
 					</small>
 				</section>
 				
@@ -477,7 +483,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
 				<!--Transforms-->
 				<section>
-					<h4>Are we just changing timing and color? What if I want to change the shape?</h4>
+					<h4>Are we just changing timing and color? What if I want to change the shape or its position?</h4>
 					<br/>
 					<p class = "fragment"><code>transition</code> works with a partner...</p>
 					
@@ -593,9 +599,32 @@ div {
 					</small>
 				</section>
 				<section>
+					<p>According to mdn, it is characterized by two-dimensional vector. Its coordinates define how much the element moves in each direction.</p>
+					<pre>
+						<code class="css">
+/* Single <length-percentage> values */
+	transform: translate(200px);
+	transform: translate(50%);
+	
+	/* Double <length-percentage> values */
+	transform: translate(100px, 200px);
+	transform: translate(100px, 50%);
+	transform: translate(30%, 200px);
+	transform: translate(30%, 50%);
+	
+						</code>
+					</pre>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/OJBdpwE" target = "_blank"> codepen.io | translate demo</a>
+					</small>
+
+				</section>
+				<section>
 					<p><code>rotate()</code></p>
 					<p>rotates an element on a fixed point.</p>
 					<p class = "fragments"> values are set in degrees </p>
+					<p>the default fixed point is also known as the transform-origin</p>
+					<p class = "fragments">We will discuss transform origins shortly!</p>
 					<small>
 						Other values used are turns and radians. we will be focusing on degrees.
 					</small>
@@ -610,7 +639,14 @@ div {
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : rotate()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | rotate demo</a>
+					</small>
+				</section>
+				<section>
+					<p>A note about combining rotate and another transform</p>
+					<p class = "fragments">Pay attention to the order you are applying the transforms.</p>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate#combining_rotation_with_another_transformation" target = "_blank">mdn web docs | Combining Rotation and another transform </a>
 					</small>
 				</section>
 				<section>
@@ -627,7 +663,7 @@ div {
 					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : skew()</a></small>
 					<br>
 					<small>
-						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | skew demo</a>
 					</small>
 				</section>
 				
