@@ -47,14 +47,16 @@
 						<li>Resources &amp; next steps</li>
 					</ul>
 				</section>
+				<!-- Animation & Keyframes -->
 				<section>
-					<h2>Intro to Animation & Keyframes</h2>
+					<h2>Intro to Animation &amp; Keyframes</h2>
 				</section>
-			<section>
+				<section>
 				<h3>Animation vs Transitions</h3>
 				<h4>How is the animation property different from the transition property?</h4>
 					<ul>
 						<li class = "fragment">can run automatically, as well as be triggered by a user</li>
+						
 						<li class = "fragment">can loop infinitely</li>
 						<li class = "fragment">for more complex movements</li>
 						<li class = "fragment">we can change more than just the start &amp; finished states.</li>
@@ -67,60 +69,6 @@
 				<!-- https://codepen.io/morganejla/pen/wvpVyME -->
 			</section>
 			
-			<section>
-				<h2>Accessibility</h2>
-					<p>we want everyone to have access to what we create for the web. </p>
-					
-					<p class="fragments">When styling our projects, keep in mind whether the styles added (including motion) enhance or distract from what we are trying to say</p>
-			</section>
-			<section>
-				<h2>Accessibility</h2>
-				<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize non-essential motion. </p>
-				<small class = "credit">
-					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank"> mdn docs | prefers-reduced-motion.</a>
-				</small>
-			</section> 
-			<section>
-				<h2>Accessibility</h2>
-				<p>prefers-reduce-motion example</p>
-				<pre>
-					<code class="css">
-.animation{
-
-	animation:pulse 1s linear infinite both;
-
-}
-
-@media(prefers-reduce-motion){
-	.animation{
-		animation-name:none;
-
-/*here is where you write the styling that you want to
- replace the animation with*/
-	}
-}
-		
-
-					</code>
-				</pre>
-				<small>
-				<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target= "_blank">mdn docs | prefers-reduced-motion</a>
-				</small>
-				<br>
-				<small>
-					<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank"> CSS Tricks | Introduction to reduced motion media query</a>
-					</small>
-			</section>
-		
-			<!-- Reduce Motion media resource and demo -->
-			<section>
-				<h2>prefers reduce motion in action</h2>
-				<a href="https://webkit.org/blog-files/prefers-reduced-motion/prm.htm" target="_blank">webkit.org</a>
-				<br>
-				<small>
-				<a href = "https://codepen.io/morganejla/pen/xxyMNrr" target ="_blank">codepen.io | prefers-reduced-motion-demo</a>
-				</small>
-			</section>
 
 			<!-- Intro to Animation -->
 			<section>
@@ -323,23 +271,75 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 			</p>
 		
 		</section>
+		<!-- Accessibility -->
+		<section>
+			<h2>Accessibility</h2>
+				<p>we want everyone to have access to what we create for the web. </p>
+				
+				<p class="fragments">When styling our projects, keep in mind whether the styles added (including motion) enhance or distract from what we are trying to say</p>
+		</section>
+		<section>
+			<h2>Accessibility</h2>
+			<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize non-essential motion. </p>
+			<small class = "credit">
+				<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank"> mdn docs | prefers-reduced-motion.</a>
+			</small>
+		</section> 
+		<section>
+			<h2>Accessibility</h2>
+			<p>prefers-reduce-motion example</p>
+			<pre>
+				<code class="css">
+.animation{
+
+animation:pulse 1s linear infinite both;
+
+}
+
+@media(prefers-reduce-motion:reduce){
+.animation{
+	animation-name:none;
+
+/*here is where you write the styling that you want to
+replace the animation with*/
+}
+}
+	
+
+				</code>
+			</pre>
+			<small>
+			<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target= "_blank">mdn docs | prefers-reduced-motion</a>
+			</small>
+			<br>
+			<small>
+				<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank"> CSS Tricks | Introduction to reduced motion media query</a>
+				</small>
+		</section>
+	
+		<!-- Reduce Motion media resource and demo -->
+		<section>
+			<h2>prefers reduce motion in action</h2>
+			<a href="https://webkit.org/blog-files/prefers-reduced-motion/prm.htm" target="_blank">webkit.org</a>
+			<br>
+			<small>
+			<a href = "https://codepen.io/morganejla/pen/xxyMNrr" target ="_blank">codepen.io | prefers-reduced-motion-demo</a>
+			</small>
+		</section>
 		
 	<!-- Intro to the Clip Path -->
-	<section>
-		<h3>Clip-path</h3>
-		<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
-		<p class= "fragment">we do this with shapes we create out of points on our page.</p>
-		<small>
-			<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
-		</small>
-	</section>
+		<section>
+			<h3>Clip-path</h3>
+			<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
+			<p class= "fragment">we do this with shapes we create out of points on our page.</p>
+			<small>
+				<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
+			</small>
+		
+		</section>
 		
 	
-	</code>
-	</pre>
 						
-
-	</section>
 		
 			<section>
 				<h3>Clip-path</h3>
@@ -368,9 +368,13 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 				</small>
 				
 			</section>
-			<!--Further Research-->
 			<section>
-				<h2>Further Research</h2>
+				<p>Animation example online</p>
+				<a href = "https://themewagon.github.io/restoran/index.html" target="_blank">Restaurant Webpage template example</a>
+			</section>
+			<!--Resources-->
+			<section>
+				<h2>Ever evolving list of resources</h2>
 				<p>here are some of my favorite sources for CSS Animations</p>
 				<ul>
 					<li><a href = "https://cssanimation.rocks/" target="_blank">CSS Animation Rocks</a></li>
@@ -378,7 +382,7 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 					<li><a href ="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS tricks</a></li>
 					<li><a href="https://animate.style/" target ="_blank">Animate.css</a></li>
 					<li><a href = "https://www.kevinpowell.co" target= "_blank">Kevin Powell - CSS Evangelist</a></li>
-					<li><a href = "https://100dayscss.com/about/">100daysCSS Challenge</a></li>
+					
 
 				</ul>
 			</section>
@@ -388,7 +392,7 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 				<ul>
 					<li><a href = "https://bennettfeely.com/clippy/" target="_blank">Clip-path maker</a></li>
 					<li><a href = "https://heropatterns.com/" target="_blank">hero patterns</a></li>
-					
+					<li><a href = "https://cubic-bezier.com/#.17,.67,.83,.67">Cubic-bezier</a></li>
 
 				</ul>
 			</section>
@@ -436,12 +440,12 @@ animation: |animation-name|animation-duration| animation-timing-function| animat
 				<section>
 					<!-- <p style="font-size: 16px; font-style: italic;">(Visit GDI's <a href="https://girldevelopit.com/events/#/list" target="blank">events page</a> to select new and/or related courses to promote here.<br> 
 						Comment out this note after adding courses.)</p> -->
-					<h3>New GDI Courses</h3>
+					<!-- <h3>New GDI Courses</h3>
 					<ul style="list-style: none; font-size: 30px;">
 						<li><a href = "https://girldevelopit.com/events/details/girl-develop-it-virtual-classes-presents-introduction-to-cloud-computing-with-microsoft-azure/" target="_blank">Introduction to Cloud Computing with Microsoft Azure</li>
 						<li<a href = "https://girldevelopit.com/events/details/girl-develop-it-user-experience-ux-presents-intro-to-ux-research/" target="_blank">Intro to UX Research</li>
 						<li><a href = "https://girldevelopit.com/events/details/girl-develop-it-user-experience-ux-presents-advanced-user-experience-research/" target="_blank">Advanced User Experience Research</a></li>
-					</ul>
+					</ul> -->
 				</section>	
 				
 				<!-- Instructor and/or TA Contact -->
